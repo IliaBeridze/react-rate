@@ -1,10 +1,11 @@
+import Card from "./components/Card";
 
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      
+      <Card />
     </div>
   );
 }
