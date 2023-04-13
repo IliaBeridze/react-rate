@@ -4,17 +4,16 @@ import "./App.scss";
 import { useState } from "react";
 
 function App() {
-const [number,setNumber] = useState(0)
-function getNum(item) {
-  // console.log(item);
- setNumber(item)
-}
-
+  const [number, setNumber] = useState(0);
+  function getNum(item) {
+    // console.log(item);
+    setNumber(item);
+  }
 
   return (
     <div className="App">
       <Card getNum={getNum} />
-<Result item={number} />
+      <Result item={number} />
     </div>
   );
 }

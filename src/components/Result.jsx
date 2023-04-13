@@ -5,7 +5,7 @@ import ResultTitle from "./ResultTitle"
 import ResultText from "./ResultText"
 export default function Result(props) {
   
-console.log(props.item);
+// console.log(props.item);
 
   return <div className="result">
   

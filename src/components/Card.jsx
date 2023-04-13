@@ -5,11 +5,11 @@ import CardButton from "./CardButton";
 import CardTitle from "./CardTitle";
 import CardText from "./CardText";
 const arr = [
-  { id: 1, nam: 1 },
-  { id: 2, nam: 2 },
-  { id: 3, nam: 3 },
-  { id: 4, nam: 4 },
-  { id: 5, nam: 5 },
+  { id: 1, num: 1 },
+  { id: 2, num: 2 },
+  { id: 3, num: 3 },
+  { id: 4, num: 4 },
+  { id: 5, num: 5 },
 ];
 
 
