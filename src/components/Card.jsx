@@ -12,7 +12,12 @@ const arr = [
   { id: 5, nam: 5 },
 ];
 
-export default function Card(params) {
+
+export default function Card(props) {
+  function getEvent(event) {
+   
+    props.getNum(event)
+  }
   return (
     <div className="card">
       <div className="star-img">
@@ -22,7 +27,7 @@ export default function Card(params) {
       <CardText text={"Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!"} />
       <div>
         {arr.map((item) => (
-          <CardRateItems key={item.id} item={item} />
+          <CardRateItems getEvent={getEvent}  key={item.id} item={item} />
         ))}{" "}
       </div>
       {/* <CardRateItems points={[1, 2, 3, 4, 5]} /> */}

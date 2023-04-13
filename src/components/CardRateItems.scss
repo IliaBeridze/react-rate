@@ -1,17 +1,22 @@
 .points {
-  color: #7C8798;
-  font-size: 30px;
-  font-family: sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .point {
+  cursor: pointer;
+  color: #7c8798;
+  font-size: 30px;
+  font-family: sans-serif;
   width: 51px;
   height: 51px;
   border-radius: 50%;
-  background-color: #262E38;
+  background-color: #262e38;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.point:hover {
+  color: #fff;
+  background: #7c8798;
 }
