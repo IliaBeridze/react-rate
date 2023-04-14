@@ -1,7 +1,5 @@
-import "./ResultSelectNum.scss"
+import "./ResultSelectNum.scss";
 
 export default function ResultSelectNum(props) {
-  return <div className="selected-num">
-    {props.text}
-  </div>
+  return <div className="selected-num">{props.text}</div>;
 }

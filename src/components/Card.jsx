@@ -16,10 +16,6 @@ const arr = [
 export default function Card(props) {
   console.log(props);
 
- 
-
- 
-
   return (
     <div className="card">
       <div className="star-img">
@@ -31,7 +27,7 @@ export default function Card(props) {
           "Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!"
         }
       />
-      <div>
+      <div className="points">
         {arr.map((item) => (
           <CardRateItems
             getEvent={props.onSelect}
@@ -41,8 +37,8 @@ export default function Card(props) {
           />
         ))}{" "}
       </div>
-      {/* <CardRateItems points={[1, 2, 3, 4, 5]} /> */}
-      <CardButton onClick={props.onSubmit}  />
+
+      <CardButton onClick={props.onSubmit} />
     </div>
   );
 }
